@@ -1,0 +1,45 @@
+/* precedence: id > class > element 
+	If id no, class no, or element no is greater at any point, that style will be applied 
+*/
+body {
+  color: hotpink;
+}
+h1 {
+  background-color: darkgray;
+}
+
+h1 {
+  background-color: darksalmon;
+}
+
+p {
+  color: brown;
+}
+
+.para {
+  color: green;
+}
+
+/* hex for color: 3 ffs's; each 0 to ff ; red - 0 to ff, green - 0 to ff, blue - 0 to ff 
+in hex alpha is rep by last ff
+ie: #000000FF
+*/
+/* rgb(red(0-255), green(0-255), blue(0-255), alpha(0-1)) */
+/* hsl - hue saturation light, hsl(color(0-360), saturation(0-100% - how colorful), l(100%(light)-0%(dark)), alpha(0-1))*/
+.blue {
+  color: #ffffff;
+  background-color: rgba(0, 88, 79, 0.5);
+}
+
+/* px -> in comparison with its parent container
+em -> used in relation with font. ie padding around font etc.
+	- changes in relation to font size of it's parent. If parents font is 16px: 1em = 16px, 2
+*/
+.box {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  margin: 50px;
+  border: 10px solid #000;
+  background-color: salmon;
+}
