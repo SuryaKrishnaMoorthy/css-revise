@@ -6,12 +6,78 @@
   </head>
   <body>
     <div>This is a div</div>
-    <span id="idselector">This is a span</span>
+    <span id="idselector">Id selector</span>
     <ul>
       <li class="red">Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
       <li>Item 4</li>
     </ul>
+    <h3>Combination</h3>
+    <div>
+      <ol>
+        <li>
+          Descendant Selector:
+          <div>div a <a href="/">Anchor tag inside a Div</a></div>
+          <span>Select all the elements inside of the first element</span>
+          <span style="font-size: smaller"
+            >Select anchors that are inside a div</span
+          >
+        </li>
+        <li>
+          Direct Selector:
+          <div>
+            <span>div > span</span>
+            <p>"p" inside a "div": Direct child</p>
+            <span>Another direct span child</span>
+          </div>
+          <span
+            >- Select elements that are direct children of the first element.
+          </span>
+          <span>Select span that are direct children of a div</span>
+        </li>
+        <li>
+          General Sibling Selector:
+          <div>
+            <span>div ~ a</span>
+          </div>
+          <p>sibling p tag</p>
+          <p>
+            - Selects all anchors that are siblings of a div and come after the
+            div
+          </p>
+        </li>
+        <li>
+          Adjacent Sibling Selector:
+          <div>
+            <span>div + a</span>
+          </div>
+          <p class="adjacent">Adjacent sibling p tag</p>
+          <p>
+            - Selects all anchors that are siblings of a div and come directly
+            after the div
+          </p>
+        </li>
+        <li>
+          Or Selector:
+          <div>
+            <span>div, a</span>
+          </div>
+          <p class="first-p">p tag with class "first-p"</p>
+          <p class="second-p">p tag with class "second-p"</p>
+          <p>- Selects all anchors and all divs</p>
+        </li>
+        <li>
+          And Selector:
+          <div>
+            <span>eg: div.c</span>
+          </div>
+          <span>p.and</span>
+          <p class="and">p tag with class "and"</p>
+          <p class="and">p tag with class "and"</p>
+          <p>- Selects all anchors and all divs</p>
+        </li>
+      </ol>
+    </div>
   </body>
 </html>

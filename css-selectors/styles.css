@@ -5,14 +5,46 @@
 /* Type selector:  select elements of that type */
 li {
   background-color: beige;
+  margin: 1em;
 }
 /* class selector */
 .red {
   color: red;
 }
 
+/* id selector */
 #idselector {
   background-color: brown;
 }
 
-li.
+/* Descendant selector */
+div a {
+  text-decoration: none;
+}
+
+/* Direct child selector */
+div > span {
+  background-color: hsl(300, 50%, 60%);
+}
+
+/* General sibling selector */
+div ~ p {
+  background-color: hsl(320, 50%, 80%);
+}
+
+/* Adjacent sibling selector */
+div + .adjacent {
+  background-color: hsl(230, 50%, 60%);
+  color: aliceblue;
+}
+
+/* Or selector */
+.first-p,
+.second-p {
+  background-color: hsla(130, 40%, 70%, 0.5);
+}
+
+/* And selector */
+p.and {
+  background-color: hsla(180, 40%, 70%, 0.5);
+}
