@@ -1,0 +1,18 @@
+/* * : universal selector selects every single element */
+* {
+  background-color: aqua;
+}
+/* Type selector:  select elements of that type */
+li {
+  background-color: beige;
+}
+/* class selector */
+.red {
+  color: red;
+}
+
+#idselector {
+  background-color: brown;
+}
+
+li.
