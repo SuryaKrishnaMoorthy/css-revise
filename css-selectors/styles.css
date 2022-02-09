@@ -4,9 +4,13 @@
 }
 /* Type selector:  select elements of that type */
 li {
-  background-color: beige;
+  /* background-color: beige; */
   margin: 1em;
 }
+div {
+  margin: 3em;
+}
+
 /* class selector */
 .red {
   color: red;
@@ -47,4 +51,37 @@ div + .adjacent {
 /* And selector */
 p.and {
   background-color: hsla(180, 40%, 70%, 0.5);
+}
+
+/* Pseudo class selector */
+button {
+  background-color: hsla(250, 40%, 70%, 0.5);
+  margin: 1em 0 0 4em;
+}
+/* Hover selector*/
+button:hover {
+  background-color: hsla(250, 40%, 60%, 0.5);
+  color: beige;
+}
+
+/* Focus selector */
+input:focus {
+  background-color: aquamarine;
+}
+
+/* Required selector */
+input:required {
+  border: 2px solid hsla(360, 40%, 30%, 0.5);
+  background-color: brown;
+  color: bisque;
+}
+
+/* Checkbox selector */
+input:checked {
+  margin-left: 50px;
+}
+
+/* Disabled selector */
+input:disabled {
+  margin-left: 70px;
 }
