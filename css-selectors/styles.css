@@ -85,3 +85,13 @@ input:checked {
 input:disabled {
   margin-left: 70px;
 }
+
+/* first child */
+a:first-child {
+  color: brown;
+}
+
+/* last child */
+a:last-child {
+  color: hsla(200, 50%, 20%, 0.6);
+}

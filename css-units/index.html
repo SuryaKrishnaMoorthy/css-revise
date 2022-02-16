@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>css units</title>
+  </head>
+  <body>
+    <p class="notes">50% - percent is relative to its parent</p>
+    <p class="notes">50px - px absolute unit no matter where it is used</p>
+    <div class="box fifty-percent">50%</div>
+    <div class="box fifty-vw">50vw (viewport - relative to screen size)</div>
+    <div class="box twenty-fifty-vh">
+      25vh(viewport relative to screen size)
+    </div>
+    <hr />
+    <div class="parent">
+      <div class="box fifty-percent">50%</div>
+      <div class="box fifty-vw">50 vw</div>
+      <div class="box twenty-fifty-vh">25 vh</div>
+    </div>
+    <h4 class="notes">
+      rem - r stands for root. relative to root(body); em - relative to parent
+    </h4>
+    <p class="one-rem">1rem</p>
+    <p class="one-em">1em</p>
+    <p class="two-rem">2rem</p>
+    <p class="two-em">2em</p>
+
+    <p class="notes">
+      Inside the container, <b> em </b> changes relative to parent(div),
+      <b>rem</b>
+      remains the same since it's relative to root
+    </p>
+    <div class="parent">
+      <p class="one-rem">1rem</p>
+      <p class="one-em">1em</p>
+      <p class="two-rem">2rem</p>
+      <p class="two-em">2em</p>
+    </div>
+  </body>
+</html>
